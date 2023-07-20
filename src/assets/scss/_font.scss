@@ -1,0 +1,5 @@
+:root {
+  @each $pxvalue, $remvalue in $font-size-map {
+    --font-#{$pxvalue}: #{$remvalue};
+  }
+}

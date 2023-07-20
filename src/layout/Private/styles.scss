@@ -1,0 +1,83 @@
+.logo-container {
+  width: 104px;
+  position: absolute;
+}
+
+.header-container {
+  height: 72px;
+  padding: 0 84px;
+  background-color: #333;
+}
+
+.sidebar-container {
+  border-right: 2px solid;
+}
+
+.text-right {
+  line-height: 0;
+}
+
+.doctor-plus > span::after {
+  content: "";
+  background-color: #dbdbdb;
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  top: 16px;
+  display: block;
+  border-radius: 8px;
+}
+
+.corporate-logo {
+  line-height: 72px;
+  padding: 0 5px;
+  border-bottom: 0;
+  width: fit-content;
+  margin-left: 22px;
+
+  li {
+    padding: 0 5px !important;
+  }
+}
+
+.trigger {
+  font-size: var(--font-24);
+  cursor: pointer;
+  transition: color 0.3s;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 250px;
+  z-index: 1;
+}
+
+.sidebar-toggle-transition {
+  transition: all 600ms ease 0s !important;
+}
+
+.main-logo svg {
+  display: block;
+}
+
+.no-hover {
+  pointer-events: none;
+}
+
+.main-container {
+  height: auto;
+  //overflow: auto;
+  background-color: #fff;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+  border: 2px solid;
+}
+
+.main-header {
+  height: 72px;
+}
+
+.main-profile {
+  margin-right: 22px;
+}

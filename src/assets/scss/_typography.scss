@@ -1,0 +1,19 @@
+@import "./variables";
+
+@each $name, $value in $text-size-map {
+  .text-#{$name} {
+    font-size: $value !important;
+  }
+}
+
+@each $name, $value in $text-weight-map {
+  .text-#{$name} {
+    font-weight: $value !important;
+  }
+}
+
+@each $name in $text-align {
+  .text-#{$name} {
+    text-align: $name !important;
+  }
+}

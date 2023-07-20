@@ -1,0 +1,27 @@
+.ant-layout {
+  height: 100vh;
+}
+
+.ant-layout-header {
+  background: #fff;
+}
+
+.anticon-phone {
+  rotate: 90deg;
+}
+
+.ant-table-thead > tr > th {
+  background: #fff;
+}
+
+.ant-table-thead
+  > tr
+  > th:not(:last-child, .ant-table-selection-column, .ant-table-row-expand-icon-cell, [colspan])::before {
+  background-color: #fff;
+}
+
+
+.ant-btn-default:not(:disabled):hover {
+  color: #d93636;
+  border-color: rgba(0, 0, 0, 0.88);
+}

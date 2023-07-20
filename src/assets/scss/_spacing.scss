@@ -1,0 +1,69 @@
+@import "./variables";
+
+// Padding
+@each $name, $value in $padding {
+  .p-#{$name} {
+    padding: $value !important;
+  }
+  .px-#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .pt-#{$name} {
+    padding-top: $value;
+  }
+  .pb-#{$name} {
+    padding-bottom: $value;
+  }
+  .pr-#{$name} {
+    padding-right: $value;
+  }
+  .pl-#{$name} {
+    padding-left: $value;
+  }
+}
+
+// margin
+@each $name, $value in $margin {
+  .m-#{$name} {
+    margin: $value !important;
+  }
+  .mx-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+  .mr-#{$name} {
+    margin-right: $value;
+  }
+  .ml-#{$name} {
+    margin-left: $value;
+  }
+}
+
+// Flex & Grid
+
+@each $name, $value in $spacer {
+  .gap-#{$name} {
+    gap: $value;
+  }
+  .row-gap-#{$name} {
+    row-gap: $value;
+  }
+  .col-gap-#{$name} {
+    column-gap: $value;
+  }
+}

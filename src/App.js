@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense } from "react"
+
+import "./App.scss"
+import "./utilities.scss"
+
+import { Layout } from "./layout"
+import ErrorBoundary from "./components/ErrorBoundary"
+import { Loader } from "./components/Loader"
+import { RoutesWithErrorBoundary } from "./routes"
+import { ROUTES } from "./routes/routeList"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <ErrorBoundary>
+        <Suspense fallback={<Loader type="fullPage" size={80} />}>
+          <Layout>
+            <RoutesWithErrorBoundary routes={ROUTES} />
+          </Layout>
+        </Suspense>
+      </ErrorBoundary>
+  )
 }
 
-export default App;
+export default App

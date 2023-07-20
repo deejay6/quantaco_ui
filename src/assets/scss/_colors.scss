@@ -1,0 +1,27 @@
+$sonic-silver-color: #767676;
+$black-liquorice-color: #3b3b3b;
+$black-color: #000;
+$christmas-silver-color: #e0e0e0;
+$white-color: #fff;
+$ultimate-grey-color: #a9a9a9;
+$theme-color: #666666;
+$theme-red-color: #ed2e24;
+
+:root {
+  --primary-text-color: #{$black-liquorice-color};
+  --secondary-text-color: #{$sonic-silver-color};
+  --primary-background-color: #{$theme-color};
+  --secondary-background-color: #{$christmas-silver-color};
+  --disabled-highlighted-color: #{$ultimate-grey-color};
+  --dark-text-color: #{$black-color};
+  --theme-button-color:#{$theme-red-color};
+}
+
+.primary-bg {
+  background-color: var(--primary-color) !important;
+}
+
+
+.border-bold-color {
+  border: 1px solid var(--border-color);
+}
